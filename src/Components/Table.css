@@ -1,0 +1,17 @@
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tablehigh{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}

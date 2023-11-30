@@ -1,0 +1,62 @@
+const config = Object.freeze({
+ //baseUrl: "http://192.168.12.57:8080/", //akansksha
+  //baseUrl: "http://192.168.12.41:8080/", //manoranjan
+  //baseUrl :"http://192.168.12.55:8080/", //laptops'sip
+  //baseUrl: "http://192.168.12.58:8080/",  //testingip
+  //baseUrl: "http://192.168.134.189:8080/",
+  //baseUrl: "http://192.168.12.51:8080/", //dhrutimaya
+  //baseUrl: "http://staging.watsoo.com:8085/watsoo-pms/", //staging
+  //baseUrl: "https://pmsstaging.nyggs.com/backend/",
+  baseUrl: "https://pms.nyggs.com/backend/",  //production
+
+  apiEndPoints: {
+    login: "user/login",
+    //login: "api/user/authenticate",
+    // dashboard: "project/dashboard",
+    dashboard: "project/v2/dashboard", //not in use                                
+    createTask: "task/add",
+    addProject: "project/v1/add",
+    getAllUser: "user/v1/user/list",
+    userList: "user/v1/get/devQa",
+    addUser: "user/v1/add",
+    userGetById: "user/v1/get/id",
+    updateUser: "user/v1/update",
+    getAllUserRole: "userRole/v1/getAll",
+    getAllProjectOwner: "user/v1/getAll/roleId",
+    updateTask: "task/update",
+    getAllTask: "task/list", //alltask
+    getTaskByProjectId: "project/task/list", //taskbyid to be used only further
+    getTaskById: "get/task",
+    getTaskTrailById: "trail/get",
+    teamList: "user/v1/getAll/team",
+    singleProjectDetails: "project/v1/get/byId",
+    updateProject: "project/update",
+    deleteProject: "project/delete",
+    uploadImages: "api/v2/file/uploadFile",
+    deleteUser: "user/delete",
+    roleApi: "v1/userRole/getAll",
+    statusList: "v1/taskStatus/getAll",
+    deletedProjectList: "project/v2/active/inactive/dashboard",
+    resourceReportList: "report/resource/management",
+    employeePerformanceList: "report/employee/preformance",
+    toggleActiveInactiveProjects: "project/v3/dashboard",
+    changePasswordApi: "user/update-user-password",
+    uploadExcel: "v1/task/uploadExcel",
+    managerList: "user/v1/get/admin-owner",
+    getProjectNamesList: "project/name/list",
+    createBulkTask: "task/bulk/add",
+    addHoliday: "holidays/v1/add",
+    holidayType: "v1/holidayType/getAll",
+    showHolidayList: "holidays/getAll/list",
+    editSingleHoliday: "holidays/v1/update",
+    allWeekOff: "holidays/v1/add/allWeekOff/?year=",
+    manualLog: "task/manually/logTime",
+    manualLoguserPermission: "user/v1/permission",
+    createTaskPermission: "user/v1/addTask/permission",
+    getAllNonApprovedTasks: "v2/project/task/list",
+    getNonApprovedTaskByID: "v2/get/task",
+    approveTask: "task/approved",
+  },
+});
+
+export default config;
